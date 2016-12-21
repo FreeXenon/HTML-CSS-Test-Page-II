@@ -1,159 +1,300 @@
+<!doctype html>
+<html lang="en">
+<!-- 
+	*****************************************************************
+	*          				HTML/CSS Test Page		    			*
+	* Created by: James O'Neill (FreeXenon) 						*
+	* site:       www.FXWebWerks.com								*
+	* email: 	  info@FXWebWerks.com								*
+	* last update:21 Dec 2016			    					 	*
+	* github: https://github.com/FreeXenon/HTML-CSS-Test-Page.git	*
+	*****************************************************************
+-->		
+<head>
+    <meta charset="utf-8">
+    <title>HTML/CSS Test Page - FX Web Werks</title>
+    <link href="_css/base.css" rel="stylesheet" type="text/css" />	
+</head>
+<body>
 <div id="Content">
-<h2>H2 - Header Testing</h2>
-<p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong> (<strong>strong</strong>). <em>Pellentesque tempus</em> (<strong>emphasis</strong>) ipsum <q>quis libero consequat varius</q> (<strong>inline quote</strong>). Fusce elementum <cite>tincidunt</cite> (<strong>cite</strong>) dapibus <ins>scelerisque augue</ins> (<strong>insert</strong>), et lobortis nisl <del>sodales ac</del> (<strong>delete</strong>). orci ut rutrum. Phasellus <a href="/FCSC/asd.htm">vel turpis mauris</a> (<strong>inline internal link</strong>). Sed <a href="/FCSC/asd.pdf">feugiat viverra</a> (<strong>internal pdf link</strong>) turpis nec hendrerit. Etiam <a href="http://asd.pdf">eget nulla ut</a> (<strong>external pdf link</strong>) justo <a href="mailto:asd@asd.com">auctor scelerisque</a> (<strong>email link</strong>). Praesent id mauris mi, a euismod odio. Nulla luctus consectetur <abbr title="text title">dignissim</abbr>. Curabitur malesuada fringilla auctor. <strong>(line break)</strong><br> Cras<br> eget<br> lacus eget turpis euismod tincidunt. Donec lectus lorem, tincidunt vitae eleifend a, feugiat sodales urna.</p>
-<p><small>asd hasjkdh sakjdh ks (<strong>small</strong>)</small></p>
-<h2>blockquote</h2>
-<blockquote>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <q>quote in a blockquote</q> Praesent et arcu nisl. Vestibulum non ligula erat. Nunc adipiscing consequat diam, vitae sagittis nisl vehicula et. Vivamus gravida dui ut massa ultrices vitae ornare diam mollis. Duis varius eros a ipsum feugiat porta. Nulla facilisi. Donec suscipit, est eget tincidunt bibendum, diam neque feugiat lorem, eget malesuada nibh velit eu neque. Etiam tristique nisl suscipit nisl faucibus accumsan sed sit amet sem.</p>
-<p>Nulla placerat, massa in ullamcorper mattis, urna eros condimentum eros, eu suscipit nibh velit eget leo. Nam ullamcorper pretium faucibus. Maecenas blandit, arcu in lacinia facilisis, massa nisi viverra erat, quis sagittis orci eros sit amet augue. Vivamus iaculis ullamcorper diam vitae viverra. Quisque ac erat turpis. Suspendisse placerat placerat feugiat. Maecenas bibendum, nisi sit amet mattis commodo, dolor odio iaculis felis, eu dictum lorem arcu nec quam.</p>
-<cite>footer - cite</cite></blockquote>
-<h2 id="header-id-" class="test_class">Code</h2>
-<p>tesing <strong>title, id, style attributes</strong> and section tag</p>
-<p><code>/**<br> * Override or insert variables into the node template.<br> */<br> function fcsc_theme_preprocess_node(&amp;$variables) {<br> $node = $variables['node'];<br> <br> if ($variables['view_mode'] == 'full' &amp;&amp; node_is_page($variables['node']))<br> <br> $variables['classes_array'][] = 'node-full';<br> }<br> // remove statistics counter, but only seems to work while not logged in as Admin<br> unset($vars['content']['links']['statistics']['#links']['statistics_counter']['title']);<br> }</code></p>
-<h2>pre</h2>
-<p><strong>testing article tag</strong></p>
-<pre>     
+    <h2>H2 - Header Testing</h2>
+    
+	<p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong> (<strong>strong</strong>). <em>Pellentesque tempus</em> (<strong>emphasis</strong>) ipsum <q>quis libero consequat varius</q> (<strong>inline quote</strong>). Fusce elementum <cite>tincidunt</cite> (<strong>cite</strong>) dapibus <ins>scelerisque augue</ins> (<strong>insert</strong>), et lobortis nisl <del>sodales ac</del> (<strong>delete</strong>). orci ut rutrum. Phasellus <a href="/FCSC/asd.htm">vel turpis mauris</a> (<strong>inline internal link</strong>). Sed <a href="/FCSC/asd.pdf">feugiat viverra</a> (<strong>internal pdf link</strong>) turpis nec hendrerit. Etiam <a href="http://asd.pdf">eget nulla ut</a> (<strong>external pdf link</strong>) justo <a href="mailto:asd@asd.com">auctor scelerisque</a> (<strong>email link</strong>). Praesent id mauris mi, a euismod odio. Nulla luctus consectetur <abbr title="text title">dignissim</abbr>. (<strong>abbr</strong>) Curabitur malesuada fringilla auctor. <strong>(line break)</strong><br />
+    Cras<br />
+    eget<br />
+    lacus eget turpis euismod tincidunt. Donec lectus lorem, tincidunt vitae eleifend a, feugiat sodales urna.</p>
+    
+    <p><small>asd hasjkdh sakjdh ks (<strong>small</strong>)</small></p>
+    
+    <h2>blockquote</h2>
+    
+    <blockquote>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <q>quote in a blockquote</q> Praesent et arcu nisl. Vestibulum non ligula erat. Nunc adipiscing consequat diam, vitae sagittis nisl vehicula et. Vivamus gravida dui ut massa ultrices vitae ornare diam mollis. Duis varius eros a ipsum feugiat porta. Nulla facilisi. Donec suscipit, est eget tincidunt bibendum, diam neque feugiat lorem, eget malesuada nibh velit eu neque. Etiam tristique nisl suscipit nisl faucibus accumsan sed sit amet sem.</p>
+        
+        <p>Nulla placerat, massa in ullamcorper mattis, urna eros condimentum eros, eu suscipit nibh velit eget leo. Nam ullamcorper pretium faucibus. Maecenas blandit, arcu in lacinia facilisis, massa nisi viverra erat, quis sagittis orci eros sit amet augue. Vivamus iaculis ullamcorper diam vitae viverra. Quisque ac erat turpis. Suspendisse placerat placerat feugiat. Maecenas bibendum, nisi sit amet mattis commodo, dolor odio iaculis felis, eu dictum lorem arcu nec quam.</p>
+            
+        <footer><cite>footer - cite</cite></footer>
+    </blockquote>
+	
+    <section id="Test_Section">
+		<h2 id="header-id-" class="test_class" style="display:block">Code</h2>
+		<p>tesing <strong>title, id, style attributes</strong> and section tag</p>
+
+		<p><code>/**<br />
+		* Override or insert variables into the node template.<br />
+		*/<br />
+		function fcsc_theme_preprocess_node(&amp;$variables) {<br />
+		$node = $variables[&#39;node&#39;];<br />
+		<br />
+		if ($variables[&#39;view_mode&#39;] == &#39;full&#39; &amp;&amp; node_is_page($variables[&#39;node&#39;]))<br />
+		<br />
+		$variables[&#39;classes_array&#39;][] = &#39;node-full&#39;;<br />
+		}<br />
+		// remove statistics counter, but only seems to work while not logged in as Admin<br />
+		unset($vars[&#39;content&#39;][&#39;links&#39;][&#39;statistics&#39;][&#39;#links&#39;][&#39;statistics_counter&#39;][&#39;title&#39;]);<br />
+		}</code></p>
+	</section> <!-- /end test_section -->
+		
+	<article>
+		<h2>pre</h2>
+		<p><strong>testing article tag</strong></p>
+		<pre>     
 			Aliquam mattis posuere purus ac aliquet. Curabitur tristique semper neque eget malesuada. Donec porta, sapien in pellentesque convallis, sem est tincidunt odio, id ultricies quam urna eu arcu. Sed ante odio, bibendum at dapibus quis, egestas eget arcu.
 			Aliquam mattis posuere purus ac aliquet. Curabitur tristique semper neque eget malesuada. Donec porta, sapien in pellentesque convallis, sem est tincidunt odio, id ultricies quam urna eu arcu. Sed ante odio, bibendum at dapibus quis, egestas eget arcu.
 			Aliquam mattis posuere purus ac aliquet. Curabitur tristique semper neque eget malesuada. Donec porta, sapien in pellentesque convallis, sem est tincidunt odio, id ultricies quam urna eu arcu. Sed ante odio, bibendum at dapibus quis, egestas eget arcu.</pre>
-<h3>H3- Header 3</h3>
-<p>Aliquam mattis posuere purus ac aliquet. Curabitur tristique semper neque eget malesuada. Donec porta, sapien in pellentesque convallis, sem est tincidunt odio, id ultricies quam urna eu arcu. Sed ante odio, bibendum at dapibus quis, egestas eget arcu.</p>
-<h3>H3- Header 3</h3>
-<p>Aliquam mattis posuere purus ac aliquet. Curabitur tristique semper neque eget malesuada. Donec porta, sapien in pellentesque convallis, sem est tincidunt odio, id ultricies quam urna eu arcu. Sed ante odio, bibendum at dapibus quis, egestas eget arcu.</p>
-<h2><a>H2 - Header 2 (with link)</a></h2>
-<p><strong>(test footer)</strong></p>
-<p>Vivamus non diam non tortor placerat tempus. Integer porttitor imperdiet mollis. Nulla quis tincidunt justo. Morbi lobortis metus eget lacus ultricies tempor. Aenean vitae est non erat tincidunt ultrices dapibus a velit. Aliquam erat volutpat. Duis a felis in dui tincidunt scelerisque eu quis risus. Suspendisse ut ante at metus volutpat congue quis auctor nunc.</p>
-<p>Aliquam mattis posuere purus ac aliquet. Curabitur tristique semper neque eget malesuada. Donec porta, sapien in pellentesque convallis, sem est tincidunt odio, id ultricies quam urna eu arcu. Sed ante odio, bibendum at dapibus quis, egestas eget arcu.</p>
-<p>Aliquam mattis posuere purus ac aliquet. Curabitur tristique semper neque eget malesuada. Donec porta, sapien in pellentesque convallis, sem est tincidunt odio, id ultricies quam urna eu arcu. Sed ante odio, bibendum at dapibus quis, egestas eget arcu.</p>
-<h3>H3- Header 3</h3>
-<p>Aliquam mattis posuere purus ac aliquet. Curabitur tristique semper neque eget malesuada. Donec porta, sapien in pellentesque convallis, sem est tincidunt odio, id ultricies quam urna eu arcu. Sed ante odio, bibendum at dapibus quis, egestas eget arcu.</p>
-<h4>H4 Header 4</h4>
-<p>Aenean magna magna, aliquet sit amet tristique et, pellentesque id ante. Morbi sit amet ante eu augue imperdiet ornare sed ac velit. Pellentesque sed tellus pellentesque massa tempus tristique vel vitae diam.</p>
-<h4>H4 Header 4</h4>
-<p>Aenean magna magna, aliquet sit amet tristique et, pellentesque id ante. Morbi sit amet ante eu augue imperdiet ornare sed ac velit. Pellentesque sed tellus pellentesque massa tempus tristique vel vitae diam.</p>
-<h3>H3 Header 3</h3>
-<h4>H4 Header 4</h4>
-<p>Aenean magna magna, aliquet sit amet tristique et, pellentesque id ante. Morbi sit amet ante eu augue imperdiet ornare sed ac velit. Pellentesque sed tellus pellentesque massa tempus tristique vel vitae diam.</p>
-<h5>H5 - Header 5</h5>
-<p>Quisque euismod feugiat lorem, sed molestie risus sodales quis. Donec nec enim erat, tempor gravida dolor. Duis tincidunt nisi in neque venenatis eleifend. Sed ante diam, cursus a congue accumsan, porta nec orci. Donec ut sem leo, ac dapibus sapien. Nullam ipsum nisi, dictum a mollis eu, aliquam in massa.</p>
-<h6>H6 - Header 6</h6>
-<p>Quisque euismod feugiat lorem, sed molestie risus sodales quis. Donec nec enim erat, tempor gravida dolor. Duis tincidunt nisi in neque venenatis eleifend. Sed ante diam, cursus a congue accumsan, porta nec orci. Donec ut sem leo, ac dapibus sapien. Nullam ipsum nisi, dictum a mollis eu, aliquam in massa.</p>
-<h6>Address</h6>
-<p>Quisque euismod feugiat lorem, sed molestie risus sodales quis. Donec nec enim erat, tempor gravida dolor. Duis tincidunt nisi in neque venenatis eleifend. Sed ante diam, cursus a congue accumsan, porta nec orci. Donec ut sem leo, ac dapibus sapien. Nullam ipsum nisi, dictum a mollis eu, aliquam in massa.</p>
-<address>Quisque euismod feugiat<br> lorem, sed molestie risus<br> sodales quis. Donec nec enim erat,</address>
-<h5>H5 - Header 5</h5>
-<p>Quisque euismod feugiat lorem, sed molestie risus sodales quis. Donec nec enim erat, tempor gravida dolor. Duis tincidunt nisi in neque venenatis eleifend. Sed ante diam, cursus a congue accumsan, porta nec orci. Donec ut sem leo, ac dapibus sapien. Nullam ipsum nisi, dictum a mollis eu, aliquam in massa.</p>
-<h4>H4 - Header 4</h4>
-<p>Quisque euismod feugiat lorem, sed molestie risus sodales quis. Donec nec enim erat, tempor gravida dolor. Duis tincidunt nisi in neque venenatis eleifend. Sed ante diam, cursus a congue accumsan, porta nec orci. Donec ut sem leo, ac dapibus sapien. Nullam ipsum nisi, dictum a mollis eu, aliquam in massa.</p>
-<h3>H3 - Header 3</h3>
-<p>Praesent vel sapien ligula. Nulla in aliquam urna. Morbi non justo in dolor imperdiet facilisis vel a justo. Integer eu lorem sem, at pellentesque sapien.</p>
-<p><strong>(test footer)</strong></p>
-<p>Praesent vel sapien ligula. Nulla in aliquam urna. Morbi non justo in dolor imperdiet facilisis vel a justo. Integer eu lorem sem, at pellentesque sapien.</p>
-<h2>Other Elements</h2>
-<h3>Block Quote</h3>
-<blockquote>
-<p>Suspendisse nibh augue, suscipit at faucibus in, blandit eu purus. Pellentesque et turpis vitae neque lacinia fermentum. Vivamus gravida, elit quis accumsan imperdiet, erat lacus vehicula quam, et iaculis erat nulla sit amet mauris. Sed nec ipsum felis. Nulla a eros mollis justo tempor hendrerit.</p>
-<cite>footer - cite</cite></blockquote>
-<h3>Lists</h3>
-<p>Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate.</p>
-<ol>
-<li>Suspendisse odio mauris, facilisis vitae sagittis non, commodo non felis.<ol>
-<li>Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate.</li>
-<li>Ut dictum lacus non mi euismod auctor. Ut dictum lacus non mi euismod auctor. Ut dictum lacus non mi euismod auctor. Ut dictum lacus non mi euismod auctor. Ut dictum lacus non mi euismod auctor. Ut dictum lacus non mi euismod auctor.<ol>
-<li>Integer semper, ligula eget mattis ultricies, diam ante placerat nulla, vel pellentesque lacus est at purus.<ol>
-<li>Maecenas non libero enim
-<ul>
-<li>Ut dictum lacus non mi euismod auctor. .</li>
-<li>Ut dictum lacus non mi euismod auctor.</li>
-</ul>
-</li>
-<li>Ut dictum lacus non mi euismod auctor.</li>
-<li>Ut dictum lacus non mi euismod auctor.</li>
-</ol></li>
-<li>Integer semper, ligula eget mattis ultricies, diam ante placerat nulla, vel pellentesque lacus est at purus.</li>
-</ol></li>
-<li>Ut dictum lacus non mi euismod auctor.</li>
-</ol></li>
-<li>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-<ul>
-<li>Vivamus tempus quam ligula, volutpat hendrerit est.
-<ul>
-<li>Proin quis magna lorem.
-<ul>
-<li>Vivamus volutpat auctor blandit.
-<ul>
-<li>Vivamus tincidunt, massa quis aliquet interdum, dui ligula tincidunt ligula, nec scelerisque mi leo nec eros.<ol>
-<li>Vivamus tincidunt, massa quis aliquet interdum, dui ligula tincidunt ligula, nec scelerisque mi leo nec eros.</li>
-<li>Proin quis magna lorem.</li>
-</ol></li>
-<li>Proin quis magna lorem.</li>
-</ul>
-</li>
-<li>Proin quis magna lorem.</li>
-</ul>
-</li>
-<li>Proin quis magna lorem.</li>
-</ul>
-</li>
-<li>Proin quis magna lorem.</li>
-</ul>
-</li>
-<li>Proin quis magna lorem.</li>
-</ol>
-<h3>Table</h3>
-<table summary="here is the table summary" cellspacing="0" cellpadding="0" border="0"><caption>Table caption</caption>
-<thead>
-<tr><th scope="col">Header</th><th scope="col">Header</th><th scope="col">Header</th><th scope="col">Header</th></tr>
-</thead>
-<tfoot>
-<tr><th scope="col">Header</th><th scope="col">Header</th><th scope="col">Header</th><th scope="col">Header</th></tr>
-</tfoot>
-<tbody>
-<tr><th scope="row">Header</th>
-<td>. Quisque ac erat</td>
-<td>. Quisque ac erat</td>
-<td>. Quisque ac erat</td>
-</tr>
-<tr><th scope="row">Header</th>
-<td>. Quisque ac erat</td>
-<td>. Quisque ac erat</td>
-<td>. Quisque ac erat</td>
-</tr>
-<tr><th scope="row">Header</th>
-<td>. Quisque ac erat</td>
-<td>. Quisque ac erat</td>
-<td>. Quisque ac erat</td>
-</tr>
-<tr><th scope="row" colspan="4">Header</th></tr>
-<tr><th scope="row">Header</th>
-<td>. Quisque ac erat</td>
-<td>. Quisque ac erat</td>
-<td>. Quisque ac erat</td>
-</tr>
-<tr><th scope="row">Header</th>
-<td>. Quisque ac erat</td>
-<td>. Quisque ac erat</td>
-<td>. Quisque ac erat</td>
-</tr>
-<tr><th scope="row">Header</th>
-<td>. Quisque ac erat</td>
-<td>. Quisque ac erat</td>
-<td>. Quisque ac erat</td>
-</tr>
-<tr><th scope="row">Header</th>
-<td>. Quisque ac erat</td>
-<td>. Quisque ac erat</td>
-<td>. Quisque ac erat</td>
-</tr>
-<tr><th scope="row">Header</th>
-<td>. Quisque ac erat</td>
-<td>. Quisque ac erat</td>
-<td>. Quisque ac erat</td>
-</tr>
-</tbody>
-</table>
-<h3>Definition Lists</h3>
-<dl><dt>Nam at quam posuere urna pharetra interdum.</dt><dd>Suspendisse erat magna, aliquam nec placerat malesuada, feugiat ac est.</dd><dd>Suspendisse erat magna, aliquam nec placerat malesuada, feugiat ac est.</dd><dt>Phasellus vehicula porttitor vestibulum.</dt><dt>Phasellus vehicula porttitor vestibulum.</dt><dd>Quisque blandit vehicula diam non blandit. In ut sem vitae metus vestibulum mattis quis ut turpis.</dd></dl>
-<p>Donec euismod convallis commodo. Nullam nec purus mauris. Phasellus sagittis justo non purus fringilla a aliquet ligula feugiat. Suspendisse rutrum pulvinar ante ut euismod. Praesent pharetra, turpis a facilisis sollicitudin, augue tortor facilisis purus, at commodo ipsum nisi ut purus. Aliquam consectetur rhoncus consectetur. Vestibulum suscipit, eros vel consectetur placerat, metus nulla euismod libero, sed aliquet tortor arcu et nunc.</p>
-<p>Praesent nec elementum erat. Morbi a neque quam. Aenean vehicula laoreet massa ac tincidunt. Ut risus arcu, condimentum quis auctor sit amet, facilisis eu velit. Duis diam tortor, mollis a lobortis vel, iaculis sit amet lorem. Sed mattis sagittis ultricies. Proin mollis leo malesuada dui tristique laoreet. Donec sodales lacus quis lacus porta accumsan. Donec orci dolor, blandit nec consequat a, facilisis et purus.</p>
-</div>
+
+		<h3>H3- Header 3</h3>
+
+		<p>Aliquam mattis posuere purus ac aliquet. Curabitur tristique semper neque eget malesuada. Donec porta, sapien in pellentesque convallis, sem est tincidunt odio, id ultricies quam urna eu arcu. Sed ante odio, bibendum at dapibus quis, egestas eget arcu.</p>
+
+		<h3>H3- Header 3</h3>
+
+		<p>Aliquam mattis posuere purus ac aliquet. Curabitur tristique semper neque eget malesuada. Donec porta, sapien in pellentesque convallis, sem est tincidunt odio, id ultricies quam urna eu arcu. Sed ante odio, bibendum at dapibus quis, egestas eget arcu.</p>
+	</article>
+
+	<section>
+		<header>
+			<h2><a>H2 - Header 2 (with link)</a></h2>
+			<p> <strong>(test header)</strong></p>
+		</header>
+		<p>Vivamus non diam non tortor placerat tempus. Integer porttitor imperdiet mollis. Nulla quis tincidunt justo. Morbi lobortis metus eget lacus ultricies tempor. Aenean vitae est non erat tincidunt ultrices dapibus a velit. Aliquam erat volutpat. Duis a felis in dui tincidunt scelerisque eu quis risus. Suspendisse ut ante at metus volutpat congue quis auctor nunc.</p>
+
+		<p>Aliquam mattis posuere purus ac aliquet. Curabitur tristique semper neque eget malesuada. Donec porta, sapien in pellentesque convallis, sem est tincidunt odio, id ultricies quam urna eu arcu. Sed ante odio, bibendum at dapibus quis, egestas eget arcu.</p>
+
+		<p>Aliquam mattis posuere purus ac aliquet. Curabitur tristique semper neque eget malesuada. Donec porta, sapien in pellentesque convallis, sem est tincidunt odio, id ultricies quam urna eu arcu. Sed ante odio, bibendum at dapibus quis, egestas eget arcu.</p>  
+
+		<h3>H3- Header 3</h3>
+
+		<p>Aliquam mattis posuere purus ac aliquet. Curabitur tristique semper neque eget malesuada. Donec porta, sapien in pellentesque convallis, sem est tincidunt odio, id ultricies quam urna eu arcu. Sed ante odio, bibendum at dapibus quis, egestas eget arcu.</p>
+
+		<h4>H4 Header 4</h4>
+
+		<p>Aenean magna magna, aliquet sit amet tristique et, pellentesque id ante. Morbi sit amet ante eu augue imperdiet ornare sed ac velit. Pellentesque sed tellus pellentesque massa tempus tristique vel vitae diam.</p>
+
+		<h4>H4 Header 4</h4>
+
+		<p>Aenean magna magna, aliquet sit amet tristique et, pellentesque id ante. Morbi sit amet ante eu augue imperdiet ornare sed ac velit. Pellentesque sed tellus pellentesque massa tempus tristique vel vitae diam.</p>
+
+		<h3>H3 Header 3</h3>
+
+		<h4>H4 Header 4</h4>
+
+		<p>Aenean magna magna, aliquet sit amet tristique et, pellentesque id ante. Morbi sit amet ante eu augue imperdiet ornare sed ac velit. Pellentesque sed tellus pellentesque massa tempus tristique vel vitae diam.</p>
+
+		<h5>H5 - Header 5</h5>
+
+		<p>Quisque euismod feugiat lorem, sed molestie risus sodales quis. Donec nec enim erat, tempor gravida dolor. Duis tincidunt nisi in neque venenatis eleifend. Sed ante diam, cursus a congue accumsan, porta nec orci. Donec ut sem leo, ac dapibus sapien. Nullam ipsum nisi, dictum a mollis eu, aliquam in massa.</p>
+
+		<h6>H6 - Header 6</h6>
+
+		<p>Quisque euismod feugiat lorem, sed molestie risus sodales quis. Donec nec enim erat, tempor gravida dolor. Duis tincidunt nisi in neque venenatis eleifend. Sed ante diam, cursus a congue accumsan, porta nec orci. Donec ut sem leo, ac dapibus sapien. Nullam ipsum nisi, dictum a mollis eu, aliquam in massa.</p>
+
+		<h6>Address</h6>
+		<p>Quisque euismod feugiat lorem, sed molestie risus sodales quis. Donec nec enim erat, tempor gravida dolor. Duis tincidunt nisi in neque venenatis eleifend. Sed ante diam, cursus a congue accumsan, porta nec orci. Donec ut sem leo, ac dapibus sapien. Nullam ipsum nisi, dictum a mollis eu, aliquam in massa.</p>
+		<address>
+			Quisque euismod feugiat<br />
+			 lorem, sed molestie risus <br />
+			 sodales quis. Donec nec enim erat, 
+		</address>
+
+		<h5>H5 - Header 5</h5>
+
+		<p>Quisque euismod feugiat lorem, sed molestie risus sodales quis. Donec nec enim erat, tempor gravida dolor. Duis tincidunt nisi in neque venenatis eleifend. Sed ante diam, cursus a congue accumsan, porta nec orci. Donec ut sem leo, ac dapibus sapien. Nullam ipsum nisi, dictum a mollis eu, aliquam in massa.</p>
+
+		<h4>H4 - Header 4</h4>
+
+		<p>Quisque euismod feugiat lorem, sed molestie risus sodales quis. Donec nec enim erat, tempor gravida dolor. Duis tincidunt nisi in neque venenatis eleifend. Sed ante diam, cursus a congue accumsan, porta nec orci. Donec ut sem leo, ac dapibus sapien. Nullam ipsum nisi, dictum a mollis eu, aliquam in massa.</p>
+
+		<h3>H3 - Header 3</h3>
+
+		<p>Praesent vel sapien ligula. Nulla in aliquam urna. Morbi non justo in dolor imperdiet facilisis vel a justo. Integer eu lorem sem, at pellentesque sapien.</p>
+			<footer>
+				<p> <strong>(test footer)</strong></p>
+				<p>Praesent vel sapien ligula. Nulla in aliquam urna. Morbi non justo in dolor imperdiet facilisis vel a justo. Integer eu lorem sem, at pellentesque sapien.</p>
+			</footer>
+		</section>
+    <h2>Other Elements</h2>
+    
+    <h3>Block Quote</h3>
+    
+    <blockquote>
+        <p>Suspendisse nibh augue, suscipit at faucibus in, blandit eu purus. Pellentesque et turpis vitae neque lacinia fermentum. Vivamus gravida, elit quis accumsan imperdiet, erat lacus vehicula quam, et iaculis erat nulla sit amet mauris. Sed nec ipsum felis. Nulla a eros mollis justo tempor hendrerit.</p>        
+        <footer>
+				<cite>footer - cite</cite>
+		</footer>     
+    </blockquote>
+    
+    <h3>Lists</h3>
+    
+    <p>Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate.</p>
+    
+    <ol>
+        <li>Suspendisse odio mauris, facilisis vitae sagittis non, commodo non felis.
+        <ol>
+            <li>Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate. Donec ullamcorper velit et est eleifend ut varius neque vulputate.</li>
+            <li>Ut dictum lacus non mi euismod auctor. Ut dictum lacus non mi euismod auctor. Ut dictum lacus non mi euismod auctor. Ut dictum lacus non mi euismod auctor. Ut dictum lacus non mi euismod auctor. Ut dictum lacus non mi euismod auctor.
+            <ol>
+                <li>Integer semper, ligula eget mattis ultricies, diam ante placerat nulla, vel pellentesque lacus est at purus.
+                <ol>
+                    <li>Maecenas non libero enim
+                    <ol>
+                        <li>Ut dictum lacus non mi euismod auctor.
+							<ul>
+								<li>Ut dictum lacus non mi euismod auctor. .</li>
+								<li>Ut dictum lacus non mi euismod auctor.</li>
+							</ul>							
+						</li>
+                        <li>Ut dictum lacus non mi euismod auctor.</li>
+                    </ol>
+                    </li>
+                    <li>Ut dictum lacus non mi euismod auctor.</li>
+                    <li>Ut dictum lacus non mi euismod auctor.</li>
+                </ol>
+                </li>
+                <li>Integer semper, ligula eget mattis ultricies, diam ante placerat nulla, vel pellentesque lacus est at purus.</li>
+            </ol>
+            </li>
+            <li>Ut dictum lacus non mi euismod auctor.</li>
+        </ol>
+        </li>
+        <li>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        <ul>
+            <li>Vivamus tempus quam ligula, volutpat hendrerit est.
+            <ul>
+                <li>Proin quis magna lorem.
+                <ul>
+                    <li>Vivamus volutpat auctor blandit.
+                    <ul>
+                        <li>Vivamus tincidunt, massa quis aliquet interdum, dui ligula tincidunt ligula, nec scelerisque mi leo nec eros.
+                        <ol>
+                            <li>Vivamus tincidunt, massa quis aliquet interdum, dui ligula tincidunt ligula, nec scelerisque mi leo nec eros.</li>
+                            <li>Proin quis magna lorem.</li>
+                        </ol>
+                        </li>
+                        <li>Proin quis magna lorem.</li>
+                    </ul>
+                    </li>
+                    <li>Proin quis magna lorem.</li>
+                </ul>
+                </li>
+                <li>Proin quis magna lorem.</li>
+            </ul>
+            </li>
+            <li>Proin quis magna lorem.</li>
+        </ul>
+        </li>
+        <li>Proin quis magna lorem.</li>
+    </ol>
+    
+    <h3>Table</h3>
+    
+    <table>
+        <caption>Table caption</caption>
+        <thead>
+            <tr>
+                <th scope="col">Header</th>
+                <th scope="col">Header</th>
+                <th scope="col">Header</th>
+                <th scope="col">Header</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th scope="col">Header</th>
+                <th scope="col">Header</th>
+                <th scope="col">Header</th>
+                <th scope="col">Header</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th scope="row">Header</th>
+                <td>. Quisque ac erat</td>
+                <td>. Quisque ac erat</td>
+                <td>. Quisque ac erat</td>
+            </tr>
+            <tr>
+                <th scope="row">Header</th>
+                <td>. Quisque ac erat</td>
+                <td>. Quisque ac erat</td>
+                <td>. Quisque ac erat</td>
+            </tr>
+            <tr>
+                <th scope="row">Header</th>
+                <td>. Quisque ac erat</td>
+                <td>. Quisque ac erat</td>
+                <td>. Quisque ac erat</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row">Header</th>
+            </tr>
+            <tr>
+                <th scope="row">Header</th>
+                <td>. Quisque ac erat</td>
+                <td>. Quisque ac erat</td>
+                <td>. Quisque ac erat</td>
+            </tr>
+            <tr>
+                <th scope="row">Header</th>
+                <td>. Quisque ac erat</td>
+                <td>. Quisque ac erat</td>
+                <td>. Quisque ac erat</td>
+            </tr>
+            <tr>
+                <th scope="row">Header</th>
+                <td>. Quisque ac erat</td>
+                <td>. Quisque ac erat</td>
+                <td>. Quisque ac erat</td>
+            </tr>
+            <tr>
+                <th scope="row">Header</th>
+                <td>. Quisque ac erat</td>
+                <td>. Quisque ac erat</td>
+                <td>. Quisque ac erat</td>
+            </tr>
+            <tr>
+                <th scope="row">Header</th>
+                <td>. Quisque ac erat</td>
+                <td>. Quisque ac erat</td>
+                <td>. Quisque ac erat</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h3>Definition Lists</h3>
+    
+    <dl>
+        <dt>Nam at quam posuere urna pharetra interdum.</dt>
+			<dd>Suspendisse erat magna, aliquam nec placerat malesuada, feugiat ac est.</dd>
+			<dd>Suspendisse erat magna, aliquam nec placerat malesuada, feugiat ac est.</dd>
+        <dt>Phasellus vehicula porttitor vestibulum.</dt>
+        <dt>Phasellus vehicula porttitor vestibulum.</dt>
+			<dd>Quisque blandit vehicula diam non blandit. In ut sem vitae metus vestibulum mattis quis ut turpis.</dd>
+    </dl>
+    
+    <p>Donec euismod convallis commodo. Nullam nec purus mauris. Phasellus sagittis justo non purus fringilla a aliquet ligula feugiat. Suspendisse rutrum pulvinar ante ut euismod. Praesent pharetra, turpis a facilisis sollicitudin, augue tortor facilisis purus, at commodo ipsum nisi ut purus. Aliquam consectetur rhoncus consectetur. Vestibulum suscipit, eros vel consectetur placerat, metus nulla euismod libero, sed aliquet tortor arcu et nunc.</p>
+    
+    <p>Praesent nec elementum erat. Morbi a neque quam. Aenean vehicula laoreet massa ac tincidunt. Ut risus arcu, condimentum quis auctor sit amet, facilisis eu velit. Duis diam tortor, mollis a lobortis vel, iaculis sit amet lorem. Sed mattis sagittis ultricies. Proin mollis leo malesuada dui tristique laoreet. Donec sodales lacus quis lacus porta accumsan. Donec orci dolor, blandit nec consequat a, facilisis et purus.</p>
+</div> <!-- /end content -->
+</body>
+</html>

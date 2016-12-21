@@ -1,0 +1,167 @@
+/* 	
+	*****************************************************************
+	*          				HTML/CSS Test Page		    			*
+	* Created by: James O'Neill (FreeXenon) 						*
+	* site:       www.FXWebWerks.com								*
+	* email: 	  info@FXWebWerks.com								*
+	* last update:21 Dec 2016			    					 	*
+	* github: https://github.com/FreeXenon/HTML-CSS-Test-Page.git	*
+	*****************************************************************
+*/
+
+/* base element styles */
+
+	body 			{ line-height:1.5em; }
+	body, table 	{ font-family: Tiresias, Verdana, Tahoma, Georgia, sans-serif; font-size:0.9em; letter-spacing:0.055em; word-spacing:0.175em; box-sizing:border-box;}
+	label			{ cursor: pointer; font-weight:bold;}
+
+	div, p, dl 		{ box-sizing:border-box;}
+
+	#Content article, 
+	#Content div, 
+	#Content p, 
+	#Content dl 	{ margin-top:1em;}
+	
+	small			{ font-size:0.8em; font-style:italic;}
+
+	#Content h1, #Content h2, 
+	#Content h3, #Content h4,
+	#Content h5, #Content h6 { font-weight:bold; margin-top:1.75em; margin-bottom:0.75em; font-family: Tiresias, Verdana, Tahoma, Georgia, sans-serif; }
+	
+	#Content h1				{ margin-bottom:0; line-height:1em;}
+	#Content h2				{ font-size:1.2em; background-color:#960d10; color:#fff; margin-top:1.75em; padding:0.5em; border-radius: 0.5em 0.5em 0 0; }
+	#Content h2 a:link		{ display:block; color:#fff;} 
+	#Content h2 a:visited	{ color:#fff;}
+	#Content h2 a:hover		{ color: #6CF76F !important;}
+		#Content div+h2		{ margin-top:1em;} 
+	#Content h3				{ font-size:1.1em; background-color: #F9E4E4; color:#960d10; margin-top:1.5em; padding:0.3em; border-radius: 0.5em 0.5em 0 0; }
+	#Content h4 			{ color:#960d10; font-size:1.2em; border-top:0.175em #960d10 solid; padding-top:0.5em; border-bottom:none;}
+	#Content h5				{ color:#960d10; font-size:1.1em; border-top:0.09em #960d10 dotted; padding-top:0.5em; }
+	#Content h6				{ color:#960d10; font-size:1em;}
+
+/* Editing Styles */
+
+	#Content del { color:#999;}
+	#Content ins { text-decoration:none; background-color: #FF0;}
+
+/* List Styles */ 
+
+	/* base ordered and unorder list styles */
+	#Content li ol,
+	#Content li ul 	{ padding-top:0em; }	
+
+	#Content ol, 
+	#Content ul		{ padding-top:0.5em; margin-left:2em; list-style-position:outside; box-sizing:border-box;}
+	#Content li		{ margin-top:0.5em; margin-left:0.5em;}
+	#Content li		{ margin-top:0.5em; margin-left:0.5em;}
+	
+	/* set standard progression for ordered and unordered lists */
+	#Content ul 					{list-style-type:disc;}
+	#Content ul ul 					{list-style-type:circle;}
+	#Content ul ul ul 				{list-style-type:square;}
+	#Content ul ul ul ul			{list-style-type:circle;}
+	#Content ul ul ul ul ul			{list-style-type:disc;}
+	#Content ul ul ul ul ul ul		{list-style-type:circle;}
+	#Content ul ul ul ul ul ul ul 	{list-style-type:square;}
+
+	#Content ol 				{list-style-type:decimal;}
+	#Content ol ol 				{list-style-type:upper-alpha;}
+	#Content ol ol ol 			{list-style-type:upper-roman;}
+	#Content ol ol ol ol 		{list-style-type:lower-alpha;}
+	#Content ol ol ol ol ol 	{list-style-type:lower-roman;}	
+
+	/* definition lists */
+	#Content dt		{ font-weight:bold;}
+	#Content dd		{ margin-left:2em;}
+	
+	#Content dd+dt 	{ margin-top:1em;}
+	#Content dt+dt 	{ margin-top:0.5em;}
+	#Content dd   	{ margin-top:0.5em;}
+
+/* code and pre styles */
+
+	#Content code  	{ font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace; overflow:auto; display:block; font-weight:normal; box-shadow: 10px 10px 5px #ccc;}
+
+	#Content code  	{ overflow: auto; display:block; border-radius: 0 0 0.5em 0.5em; }
+
+	#Content pre  	{ overflow:auto; display:block; box-shadow: 10px 10px 5px #ccc; border-radius: 0.5em 0.5em 0 0; }
+
+	#Content pre,
+	#Content code  	{ border:0.09em solid #ccc; padding:0.5em;  background-color: #F9E4E4;}
+
+
+/* Block Quote and Inline Quote Styles */
+
+	/* reset for parent theme */
+	#Content blockquote 	{quotes:''; font-style:italic; content:''; background-color:inherit; font-size:1em; background:none; padding:inherit; border-radius:0.5em; border:0.09em solid #ccc;}
+	#Content q 			{quotes:''; font-style:italic; content:''; border:none; background-color:inherit; font-size:1em; background:none; padding:inherit;}
+
+	/* pulled from http://html5doctor.com/blockquote-q-cite/ */ 
+	/* for two levels of nested quotations */
+	
+	#Content q 	{quotes: '"' '"' ''' '''; font-style:italic;}
+
+	 /* extra content definitions for pre-2011 WebKit */
+	#Content q:before 	{content: '"'; content: open-quote;}
+	#Content q:after 	{content: '"'; content: close-quote;}
+	#Content q q:before {content: "'"; content: open-quote;}
+	#Content q q:after 	{content: "'"; content: close-quote;}
+	  /* q in blockquote */
+
+	#Content blockquote 			{content: "'"; content: open-quote; box-shadow: 10px 10px 5px #ccc; background-color: #F9E4E4;}
+
+	#Content blockquote q:before	{content: "'"; content: open-quote;}
+	#Content blockquote q:after 	{content: "'"; content: close-quote;}
+	#Content blockquote q q:before 	{content: '"'; content: open-quote;}
+	#Content blockquote q q:after 	{content: '"'; content: close-quote;}
+	  /* blockquote hanging opening quote */
+	#Content blockquote:before {display: block; height: 0; content: '"'; margin-left: -.95em; font: italic 400%/1 Cochin,Georgia,"Times New Roman",serif; color: #999; }
+
+	#Content blockquote				{ border-left:#960d10 0.3em solid; padding-left:0.5em; margin-left:3em;}
+		#Content blockquote footer 	{ text-align:right; padding-right:0.5em; font-family:Tiresias;}
+
+	#Content hr						{ margin:2em auto; width:80%; background-color: #960d10; }
+
+	#Content address 				{}
+
+/* Table Styles */
+
+	#Content table						{ box-shadow: 10px 10px 5px #ccc;}
+	#Content table caption 				{ font-weight: bold; padding: .5em; margin: .5em auto;}
+	#Content table 						{ border: .09em inset #000; margin: 0.5em auto; background-color:#fff;}
+
+	#Content table td, #Content table th {padding: .5em;}
+	#Content table thead th, 
+	#Content table tfoot th,  
+	#Content th[scope]					{ font-weight: bold; background-color:#960d10; color:#fff;}
+	#Content table thead th 			{ border-bottom: .1em inset #000;}
+	#Content table tfoot th 			{ border-top: .1em inset #000;}
+	#Content th[colspan], 
+	#Content tr[rowspan] 				{ text-align:center;}
+	#Content tbody tr:nth-child(odd) 	{ background-color: #F9E4E4;}
+
+/* Abbreviations and Acronyms */ 
+
+	#Content abbr, #Content acronym 				{border: none;} 
+	#Content abbr[title], #Content acronym[title] 	{border-bottom: .09em dotted #aaa; cursor: help;} /* IE does not support (A.S.) */ 
+	#Content a abbr[title], #Content a acronym[title] {cursor: help;} /* IE does not support (C.T.) */ 
+
+/* Link Styles */ 
+
+	a:link			{ text-decoration:none !important; display:inline-block;}
+
+	#Content a:link			{ color:#c55b85; font-weight:bold; text-decoration:none !important;}
+	#Content a:visited		{ color:#90b349;}
+	#Content a:visited:hover{ color:#960d10;}
+	#Content a:hover		{ color:#960d10 !important;}
+	#Content a:active		{}		
+	#Content :link			{ color:#70a2ec; font-weight:bold;}
+	#Content :link:hover	{ color:#90b349;}
+
+	/* set up generated icons to denote external links and pdf links
+		- only Mozilla and the newer versions of Opera support */
+	#Content a[href^="mailto:"]::before 	{content: url(_icons/Email.gif); vertical-align:middle; padding-right:0.3em;}
+	#Content a[href$=".pdf"]::before 		{content: url(_icons/Adobe_PDF.gif); vertical-align:middle; padding-right:0.3em;}
+	#Content a[href^="http://"]::before, 
+	#Content a[href^="https://"]::before 	{content: url(_icons/External.gif); vertical-align:middle;  height:inherit; padding-right:0.3em;}
+	#Content a[href^="http://"][href$=".pdf"]::before, a[href^="https://"][href$=".pdf"]::before {content: url(_icons/External.gif) url(_icons/Adobe_PDF.gif); vertical-align:middle; padding-right:0.3em;}
